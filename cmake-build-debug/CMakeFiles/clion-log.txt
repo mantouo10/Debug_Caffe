@@ -1,0 +1,115 @@
+/home/usrp/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/usrp/lstmcaffe
+-- The C compiler identification is GNU 4.8.4
+-- The CXX compiler identification is GNU 4.8.4
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   filesystem
+--   chrono
+--   date_time
+--   atomic
+-- Found GFlags: /usr/include  
+-- Found gflags  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libgflags.so)
+-- Found Glog: /usr/include  
+-- Found glog    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libglog.so)
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "2.5.0") 
+-- Found PROTOBUF Compiler: /usr/bin/protoc
+-- HDF5: Using hdf5 compiler wrapper to determine C configuration
+-- HDF5: Using hdf5 compiler wrapper to determine CXX configuration
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/libhdf5_cpp.so;/usr/lib/x86_64-linux-gnu/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.8.11") found components:  HL 
+-- Found LMDB: /usr/include  
+-- Found lmdb    (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/liblmdb.so)
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found Snappy: /usr/include  
+-- Found Snappy  (include: /usr/include, library: /usr/lib/libsnappy.so)
+CMake Warning at cmake/Dependencies.cmake:82 (message):
+  -- CUDA is not detected by cmake.  Building without it...
+Call Stack (most recent call first):
+  CMakeLists.txt:46 (include)
+
+
+-- OpenCV found (/usr/local/share/OpenCV)
+-- Found Atlas: /usr/include  
+-- Found Atlas (include: /usr/include library: /usr/lib/libatlas.so lapack: /usr/lib/liblapack.so
+-- Found PythonInterp: /usr/bin/python2.7 (found suitable version "2.7.6", minimum required is "2.7") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.6", minimum required is "2.7") 
+-- Found NumPy: /usr/local/lib/python2.7/dist-packages/numpy/core/include (found suitable version "1.12.1", minimum required is "1.7.1") 
+-- NumPy ver. 1.12.1 found (include: /usr/local/lib/python2.7/dist-packages/numpy/core/include)
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   python
+-- Found Doxygen: /usr/local/bin/doxygen (found version "1.8.14") 
+-- Detected Doxygen OUTPUT_DIRECTORY: ./doxygen/
+-- Found Git: /usr/bin/git (found version "1.9.1") 
+-- 
+-- ******************* Caffe Configuration Summary *******************
+-- General:
+--   Version           :   1.0.0
+--   Git               :   unknown
+--   System            :   Linux
+--   C++ compiler      :   /usr/bin/c++
+--   Release CXX flags :   -O3 -DNDEBUG -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Debug CXX flags   :   -g -fPIC -Wall -Wno-sign-compare -Wno-uninitialized
+--   Build type        :   Debug
+-- 
+--   BUILD_SHARED_LIBS :   ON
+--   BUILD_python      :   ON
+--   BUILD_matlab      :   OFF
+--   BUILD_docs        :   ON
+--   CPU_ONLY          :   OFF
+--   USE_OPENCV        :   ON
+--   USE_LEVELDB       :   ON
+--   USE_LMDB          :   ON
+--   USE_NCCL          :   OFF
+--   ALLOW_LMDB_NOLOCK :   OFF
+-- 
+-- Dependencies:
+--   BLAS              :   Yes (Atlas)
+--   Boost             :   Yes (ver. 1.54)
+--   glog              :   Yes
+--   gflags            :   Yes
+--   protobuf          :   Yes (ver. 2.5.0)
+--   lmdb              :   Yes (ver. 0.9.10)
+--   LevelDB           :   Yes (ver. 1.15)
+--   Snappy            :   Yes (ver. 1.1.0)
+--   OpenCV            :   Yes (ver. 3.1.0)
+--   CUDA              :   No
+-- 
+-- Python:
+--   Interpreter       :   /usr/bin/python2.7 (ver. 2.7.6)
+--   Libraries         :   /usr/lib/x86_64-linux-gnu/libpython2.7.so (ver 2.7.6)
+--   NumPy             :   /usr/local/lib/python2.7/dist-packages/numpy/core/include (ver 1.12.1)
+-- 
+-- Documentaion:
+--   Doxygen           :   /usr/local/bin/doxygen (1.8.14)
+--   config_file       :   /home/usrp/lstmcaffe/.Doxyfile
+-- 
+-- Install:
+--   Install path      :   /home/usrp/lstmcaffe/cmake-build-debug/install
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/usrp/lstmcaffe/cmake-build-debug
