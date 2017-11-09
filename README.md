@@ -1,3 +1,23 @@
+# 使用
+caffe 编译
+-下载caffe安装包
+-进入根目录
+-修改Makefile.config.example为Makefile.config, 并修改CPU_only =1 , opencv = 3, python路径.(因为我用cpu版调试,使用了opencv3,Python不是默认路径)
+-在根目录下运行终端输入 1.make all 2.make test 3. make runtest
+-到./data中运行脚本下载数据, 以及到example中运行脚本对数据进行预处理
+
+Clion 配置
+-点击edit configurations选中要调试的caffe.bin
+-在working directory中输入caffe的根目录
+-在program arguments中输入train -- solver= example/cifar10/cifar10_quick_solver_proto.txt
+-在proto.txt中的末尾GPU/CPU给为CPU
+
+经过前两步的配置编译,已经可以运行程序并调试了.
+## 建议
+在没有对caffe源代码有个大概了解, 直接进入调试容易找不着头尾, 建议先看caffe的proto-数据载入-Blob-layer-net-solver等.
+等有个大概了解后就可以开始调试, 看看数据流向,以及临时结果.
+后期就可以自己写层了.
+
 # Caffe
 
 [![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
